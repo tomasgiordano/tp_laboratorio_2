@@ -1,0 +1,18 @@
+C:\Users\pc\Desktop\2DO CUATRI\tp_laboratorio_2\Entidades\Entidades\obj\Debug\netstandard2.0\Entidades.csprojAssemblyReference.cache
+C:\Users\pc\Desktop\2DO CUATRI\tp_laboratorio_2\Entidades\Entidades\obj\Debug\netstandard2.0\Entidades.csproj.CoreCompileInputs.cache
+C:\Users\pc\Desktop\2DO CUATRI\tp_laboratorio_2\Entidades\Entidades\obj\Debug\netstandard2.0\Entidades.AssemblyInfoInputs.cache
+C:\Users\pc\Desktop\2DO CUATRI\tp_laboratorio_2\Entidades\Entidades\obj\Debug\netstandard2.0\Entidades.AssemblyInfo.cs
+C:\Users\pc\Desktop\2DO CUATRI\tp_laboratorio_2\Entidades\Entidades\bin\Debug\netstandard2.0\Entidades.deps.json
+C:\Users\pc\Desktop\2DO CUATRI\tp_laboratorio_2\Entidades\Entidades\bin\Debug\netstandard2.0\Entidades.dll
+C:\Users\pc\Desktop\2DO CUATRI\tp_laboratorio_2\Entidades\Entidades\bin\Debug\netstandard2.0\Entidades.pdb
+C:\Users\pc\Desktop\2DO CUATRI\tp_laboratorio_2\Entidades\Entidades\obj\Debug\netstandard2.0\Entidades.dll
+C:\Users\pc\Desktop\2DO CUATRI\tp_laboratorio_2\Entidades\Entidades\obj\Debug\netstandard2.0\Entidades.pdb
+C:\Users\pc\Desktop\2DO CUATRI\tp_laboratorio_2\TP1 Laboratorio\Entidades\bin\Debug\netstandard2.0\Entidades.deps.json
+C:\Users\pc\Desktop\2DO CUATRI\tp_laboratorio_2\TP1 Laboratorio\Entidades\bin\Debug\netstandard2.0\Entidades.dll
+C:\Users\pc\Desktop\2DO CUATRI\tp_laboratorio_2\TP1 Laboratorio\Entidades\bin\Debug\netstandard2.0\Entidades.pdb
+C:\Users\pc\Desktop\2DO CUATRI\tp_laboratorio_2\TP1 Laboratorio\Entidades\obj\Debug\netstandard2.0\Entidades.csprojAssemblyReference.cache
+C:\Users\pc\Desktop\2DO CUATRI\tp_laboratorio_2\TP1 Laboratorio\Entidades\obj\Debug\netstandard2.0\Entidades.csproj.CoreCompileInputs.cache
+C:\Users\pc\Desktop\2DO CUATRI\tp_laboratorio_2\TP1 Laboratorio\Entidades\obj\Debug\netstandard2.0\Entidades.AssemblyInfoInputs.cache
+C:\Users\pc\Desktop\2DO CUATRI\tp_laboratorio_2\TP1 Laboratorio\Entidades\obj\Debug\netstandard2.0\Entidades.AssemblyInfo.cs
+C:\Users\pc\Desktop\2DO CUATRI\tp_laboratorio_2\TP1 Laboratorio\Entidades\obj\Debug\netstandard2.0\Entidades.dll
+C:\Users\pc\Desktop\2DO CUATRI\tp_laboratorio_2\TP1 Laboratorio\Entidades\obj\Debug\netstandard2.0\Entidades.pdb
