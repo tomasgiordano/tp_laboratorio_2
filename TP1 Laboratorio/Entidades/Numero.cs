@@ -7,57 +7,117 @@ namespace Entidades
     public class Numero
     {
         private double numero;
-        public double SetNumero
+        private string SetNumero
         {
-            set { this.numero = value; }
+            set { this.numero = ValidarNumero(value); }
+            
         }
 
-        public string BinarioDecimal(string binario)
+        public static string BinarioDecimal(string strBinario)
         {
-           return (BitConverter.Int64BitsToDouble(Convert.ToInt64(binario, 2))).ToString();
+            int bin = 0;
+            int exp = 0;
+            int cantidad = strBinario.Length;
+            string resultado;
+            double num = 0;
+
+            if (int.TryParse(strBinario, out bin))
+            {
+                for (int i = cantidad - 1; i >= 0; i--)
+                {
+                    if (strBinario[i] == '1')
+                    {
+                        num += Math.Pow(2, exp);
+                    }
+                    exp++;
+                }
+                resultado = num.ToString();
+                return resultado;
+            }
+            else
+            {
+                return "Valor Inválido";
+            }            
         }
-        public string DecimalBinario(double num)
+        public static string DecimalBinario(double num)
         {
-            long numBin = BitConverter.DoubleToInt64Bits(num);
-            return Convert.ToString(numBin, 2);
-        }
-        public string DecimalBinario(string num)
-        {
-            Convert.ToDouble(num);
-            return DecimalBinario(num);
+            double resto;
+            string strResto = "";
+            string resultado = "";
+            int division = (int)num;
+
+            if (num > 0)
+            {
+                while (division >= 2)
+                {
+                    resto = division % 2;
+                    division = division / 2;
+
+                    strResto = resto.ToString();
+                    resultado = strResto + resultado;
+                }
+                resultado = "1"+resultado;
+            }
+            else
+            {
+                resultado = "0";
+            }
+            return resultado;
         }
 
-        public Numero()
+        public static string DecimalBinario(string strNum)
         {
-            this.numero = 0;
+            double doubleNum;
+            if(!(Double.TryParse(strNum,out doubleNum)))
+            {
+                return "Valor Inválido";
+            }
+            else
+            {
+                if(Convert.ToDouble(strNum)>0)
+                {
+                    return DecimalBinario(Convert.ToDouble(strNum));
+                }
+                else
+                {
+                    return "Valor inválido";
+                }
+            }
         }
+
+        public Numero():this(0)
+        {
+
+        }
+
         public Numero(double numero)
         {
             this.numero = numero;
         }
+
         public Numero(string strNumero)
         {
-            double.TryParse(strNumero, out this.numero);
+            this.SetNumero = strNumero;
         }
 
-        public static double operator +(Numero n1, Numero n2)
+        public static double operator + (Numero n1, Numero n2)
         {
-            return (double)(n1+n2);
+            return (double)(n1.numero+n2.numero);
         }
 
-        public static double operator -(Numero n1, Numero n2)
+        public static double operator - (Numero n1, Numero n2)
         {
-            return (double)(n1-n2);
+            return (double)(n1.numero-n2.numero);
         }
 
-        public static double operator *(Numero n1, Numero n2)
+        public static double operator * (Numero n1, Numero n2)
         {
-            return (double)(n1*n2);
+            return (double)(n1.numero*n2.numero);
         }
 
-        public static double operator /(Numero n1, Numero n2)
+        public static double operator / (Numero n1, Numero n2)
         {
-            return (double)(n1/n2);
+            return (double)(n1.numero/n2.numero);
         }
         private double ValidarNumero(string strNumero)
         {
