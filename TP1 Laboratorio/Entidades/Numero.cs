@@ -21,8 +21,6 @@ namespace Entidades
             string resultado;
             double num = 0;
 
-            if (int.TryParse(strBinario, out bin))
-            {
                 for (int i = cantidad - 1; i >= 0; i--)
                 {
                     if (strBinario[i] == '1')
@@ -32,19 +30,19 @@ namespace Entidades
                     exp++;
                 }
                 resultado = num.ToString();
-                return resultado;
-            }
-            else
-            {
-                return "Valor Inválido";
-            }            
+                return resultado;      
         }
         public static string DecimalBinario(double num)
         {
             double resto;
             string strResto = "";
             string resultado = "";
-            int division = (int)num;
+            uint division = (uint)num;
+
+            if(num==0)
+            {
+                resultado = "0";
+            }
 
             if (num > 0)
             {
@@ -74,7 +72,7 @@ namespace Entidades
             }
             else
             {
-                if(Convert.ToDouble(strNum)>0)
+                if(Convert.ToDouble(strNum)>=0)
                 {
                     return DecimalBinario(Convert.ToDouble(strNum));
                 }
