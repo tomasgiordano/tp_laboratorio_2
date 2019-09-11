@@ -15,7 +15,6 @@ namespace Entidades
 
         public static string BinarioDecimal(string strBinario)
         {
-            int bin = 0;
             int exp = 0;
             int cantidad = strBinario.Length;
             string resultado;
