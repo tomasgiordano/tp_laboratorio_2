@@ -36,12 +36,17 @@ namespace Entidades
             double resto;
             string strResto = "";
             string resultado = "";
-            uint division = (uint)num;
 
-            if(num==0)
+            if (num == 0)
             {
                 resultado = "0";
             }
+            else if (num < 0)
+            {
+                num = num * -1;
+            }
+
+            int division = (int)num;            
 
             if (num > 0)
             {
@@ -53,32 +58,23 @@ namespace Entidades
                     strResto = resto.ToString();
                     resultado = strResto + resultado;
                 }
-                resultado = "1"+resultado;
+                resultado = "1" + resultado;
             }
-            else
-            {
-                resultado = "0";
-            }
+
             return resultado;
         }
 
         public static string DecimalBinario(string strNum)
         {
             double doubleNum;
-            if(!(Double.TryParse(strNum,out doubleNum)))
+
+            if(!(Double.TryParse(strNum,out doubleNum))||strNum.Length>10)
             {
                 return "Valor Inválido";
             }
             else
-            {
-                if(Convert.ToDouble(strNum)>=0)
-                {
-                    return DecimalBinario(Convert.ToDouble(strNum));
-                }
-                else
-                {
-                    return "Valor inválido";
-                }
+            {               
+                return DecimalBinario(Convert.ToDouble(strNum));              
             }
         }
 
