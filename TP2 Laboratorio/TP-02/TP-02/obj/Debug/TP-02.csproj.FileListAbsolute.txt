@@ -28,3 +28,13 @@ C:\Users\pc\Desktop\2DO CUATRI\Trabajos Practicos 2\tp_laboratorio_2\TP2 Laborat
 C:\Users\pc\Desktop\2DO CUATRI\Trabajos Practicos 2\tp_laboratorio_2\TP2 Laboratorio\TP-02\TP-02\bin\Debug\Entidades.pdb
 C:\Users\pc\Desktop\2DO CUATRI\Trabajos Practicos 2\tp_laboratorio_2\TP2 Laboratorio\TP-02\TP-02\obj\Debug\TP-02.csproj.CopyComplete
 C:\Users\pc\Desktop\2DO CUATRI\Trabajos Practicos 2\tp_laboratorio_2\TP2 Laboratorio\TP-02\TP-02\obj\Debug\TP-02.pdb
+C:\Users\pc\Desktop\2DO CUATRI\tp_laboratorio_2\TP2 Laboratorio\TP-02\TP-02\bin\Debug\TP-02.exe.config
+C:\Users\pc\Desktop\2DO CUATRI\tp_laboratorio_2\TP2 Laboratorio\TP-02\TP-02\bin\Debug\TP-02.exe
+C:\Users\pc\Desktop\2DO CUATRI\tp_laboratorio_2\TP2 Laboratorio\TP-02\TP-02\bin\Debug\TP-02.pdb
+C:\Users\pc\Desktop\2DO CUATRI\tp_laboratorio_2\TP2 Laboratorio\TP-02\TP-02\bin\Debug\Entidades.dll
+C:\Users\pc\Desktop\2DO CUATRI\tp_laboratorio_2\TP2 Laboratorio\TP-02\TP-02\bin\Debug\Entidades.pdb
+C:\Users\pc\Desktop\2DO CUATRI\tp_laboratorio_2\TP2 Laboratorio\TP-02\TP-02\obj\Debug\TP-02.csprojAssemblyReference.cache
+C:\Users\pc\Desktop\2DO CUATRI\tp_laboratorio_2\TP2 Laboratorio\TP-02\TP-02\obj\Debug\TP-02.csproj.CoreCompileInputs.cache
+C:\Users\pc\Desktop\2DO CUATRI\tp_laboratorio_2\TP2 Laboratorio\TP-02\TP-02\obj\Debug\TP-02.csproj.CopyComplete
+C:\Users\pc\Desktop\2DO CUATRI\tp_laboratorio_2\TP2 Laboratorio\TP-02\TP-02\obj\Debug\TP-02.exe
+C:\Users\pc\Desktop\2DO CUATRI\tp_laboratorio_2\TP2 Laboratorio\TP-02\TP-02\obj\Debug\TP-02.pdb
