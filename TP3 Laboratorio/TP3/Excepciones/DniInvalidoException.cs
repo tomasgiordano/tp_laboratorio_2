@@ -11,17 +11,17 @@ namespace Excepciones
 
         }
 
-        public DniInvalidoException(string mensaje, Exception e) : base(mensaje, e)
+        public DniInvalidoException(string mensaje, Exception e) : base(mensaje,e)
         {
 
         }
 
-        public DniInvalidoException(Exception e):this("DNI Inválido.",e)
+        public DniInvalidoException(Exception e) : this("DNI Inválido.",e)
         {
 
         }
 
-        public DniInvalidoException(string mensaje):this("DNI Inválido.",null)
+        public DniInvalidoException(string mensaje) : this(mensaje,null)
         {
 
         }

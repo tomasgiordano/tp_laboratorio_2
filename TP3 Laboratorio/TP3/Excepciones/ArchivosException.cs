@@ -6,7 +6,7 @@ namespace Excepciones
 {
     public class ArchivosException:Exception
     {
-        public ArchivosException(Exception innerException):base("NO es posible recibir informacion del archivo.",innerException)
+        public ArchivosException(Exception innerException):base("No se puede leer o escribir el archivo.",innerException)
         {
             
         }

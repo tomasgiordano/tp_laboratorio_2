@@ -6,7 +6,7 @@ namespace Excepciones
 {
     public class NacionalidadInvalidaException:Exception
     {
-        public NacionalidadInvalidaException():this("Nacionalidad Inválida.")
+        public NacionalidadInvalidaException():this("La nacionalidad no se condice con el numero de DNI.")
         {
 
         }
