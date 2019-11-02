@@ -1,0 +1,9 @@
+C:\Users\pc\Desktop\2DO CUATRI\tp_laboratorio_2\TP3 Laboratorio\TP3\Excepciones\bin\Debug\netstandard2.0\Excepciones.deps.json
+C:\Users\pc\Desktop\2DO CUATRI\tp_laboratorio_2\TP3 Laboratorio\TP3\Excepciones\bin\Debug\netstandard2.0\Excepciones.dll
+C:\Users\pc\Desktop\2DO CUATRI\tp_laboratorio_2\TP3 Laboratorio\TP3\Excepciones\bin\Debug\netstandard2.0\Excepciones.pdb
+C:\Users\pc\Desktop\2DO CUATRI\tp_laboratorio_2\TP3 Laboratorio\TP3\Excepciones\obj\Debug\netstandard2.0\Excepciones.csprojAssemblyReference.cache
+C:\Users\pc\Desktop\2DO CUATRI\tp_laboratorio_2\TP3 Laboratorio\TP3\Excepciones\obj\Debug\netstandard2.0\Excepciones.csproj.CoreCompileInputs.cache
+C:\Users\pc\Desktop\2DO CUATRI\tp_laboratorio_2\TP3 Laboratorio\TP3\Excepciones\obj\Debug\netstandard2.0\Excepciones.AssemblyInfoInputs.cache
+C:\Users\pc\Desktop\2DO CUATRI\tp_laboratorio_2\TP3 Laboratorio\TP3\Excepciones\obj\Debug\netstandard2.0\Excepciones.AssemblyInfo.cs
+C:\Users\pc\Desktop\2DO CUATRI\tp_laboratorio_2\TP3 Laboratorio\TP3\Excepciones\obj\Debug\netstandard2.0\Excepciones.dll
+C:\Users\pc\Desktop\2DO CUATRI\tp_laboratorio_2\TP3 Laboratorio\TP3\Excepciones\obj\Debug\netstandard2.0\Excepciones.pdb

@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace Clases_Abstractas
+namespace EntidadesAbstractas
 {
     public abstract class Universitario:Persona
     {
@@ -20,13 +20,13 @@ namespace Clases_Abstractas
             return false;
         }
 
-        protected string MostrarDatos()
+        protected virtual string MostrarDatos()
         {
-            StringBuilder cadena = new StringBuilder();
-            cadena.AppendLine(base.ToString());
-            cadena.AppendLine("LEGAJO NUMERO: " + this.legajo);
+            StringBuilder sb = new StringBuilder();
+            sb.AppendLine(base.ToString());
+            sb.AppendLine("LEGAJO NUMERO: " + this.legajo);
 
-            return cadena.ToString();
+            return sb.ToString();
         }
 
         public static bool operator ==(Universitario pg1,Universitario pg2)
@@ -41,6 +41,19 @@ namespace Clases_Abstractas
 
         protected abstract string ParticiparEnClase();
 
+        public Universitario()
+        {
+
+        }
+
+        public Universitario(int legajo, string nombre,string apellido,string dni,ENacionalidad nacionalidad)
+        {
+            this.legajo = legajo;
+            this.Nombre = nombre;
+            this.Apellido = apellido;
+            this.StringToDNI = dni;
+            this.Nacionalidad = nacionalidad;
+        }
         #endregion
     }
 }

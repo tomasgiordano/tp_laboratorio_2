@@ -4,9 +4,9 @@ using System.Text;
 
 namespace Excepciones
 {
-    public class SinProfeException:Exception
+    public class SinProfesorException:Exception
     {
-        public SinProfeException():base("No tiene profesor.")
+        public SinProfesorException():base("No tiene profesor.")
         {
 
         }

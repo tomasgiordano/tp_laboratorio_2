@@ -3,7 +3,7 @@ using System.Text;
 using System.Text.RegularExpressions;
 using Excepciones;
 
-namespace Clases_Abstractas
+namespace EntidadesAbstractas
 {
     public abstract class Persona
     {
@@ -30,9 +30,9 @@ namespace Clases_Abstractas
                 {
                     this.dni = ValidarDni(this.Nacionalidad, value);
                 }
-                catch
+                catch(Exception e)
                 {
-                    throw new NacionalidadInvalidaException();
+                    throw e;
                 }
             }
         }
@@ -65,18 +65,18 @@ namespace Clases_Abstractas
         #region Metodos
         public override string ToString()
         {
-            StringBuilder cadena = new StringBuilder();
-            cadena.AppendLine("NOMBRE COMPLETO: " + this.apellido + ", " + this.nombre);
-            cadena.AppendLine("NACIONALIDAD: " + this.nacionalidad);
+            StringBuilder sb = new StringBuilder();
+            sb.AppendLine("NOMBRE COMPLETO: " + this.apellido + ", " + this.nombre);
+            sb.AppendLine("NACIONALIDAD: " + this.nacionalidad);
 
-            return cadena.ToString();
+            return sb.ToString();
         }
 
         private int ValidarDni(ENacionalidad nacionalidad,int dato)
         {
-            if(dato >= 1 && dato <= 89999999)
+            if(nacionalidad == ENacionalidad.Argentino) 
             {
-                if(nacionalidad==ENacionalidad.Argentino)
+                if (dato >= 1 && dato <= 89999999)
                 {
                     return dato;
                 }
@@ -85,17 +85,26 @@ namespace Clases_Abstractas
                     throw new NacionalidadInvalidaException();
                 }
             }
-            else if(dato > 89999999 && dato <= 99999999)
+            else if (nacionalidad == ENacionalidad.Extranjero) 
             {
-                if(nacionalidad==ENacionalidad.Extranjero)
+                if (dato > 89999999 && dato <= 99999999)
                 {
                     return dato;
                 }
                 else
                 {
-                    throw new ENacionalidadInvalidaException();
+                    throw new NacionalidadInvalidaException();
                 }
             }
+            else if(dato> 99999999||dato<1)
+            {
+                throw new DniInvalidoException();
+            }
+            else
+            {
+                throw new NacionalidadInvalidaException();
+            }
+
         }
 
         private int ValidarDni(ENacionalidad nacionalidad, string dato)
@@ -106,8 +115,8 @@ namespace Clases_Abstractas
 
         private string ValidarNombreApellido(string dato)
         {
-            Regex reg = new Regex("^[A-Za-z]+$");
-            if (reg.IsMatch(dato))
+            Regex r = new Regex("^[A-Za-z]+$");
+            if (r.IsMatch(dato))
             {
                 return dato;
             }
@@ -115,6 +124,12 @@ namespace Clases_Abstractas
             {
                 return "";
             }
+        }
+
+        public enum ENacionalidad
+        {
+            Argentino,
+            Extranjero,
         }
         #endregion
     }

@@ -198,9 +198,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\pc\\Desktop\\2DO CUATRI\\tp_laboratorio_2\\TP3 Laboratorio\\TP3\\Clases Abstractas\\Clases Abstractas\\Clases Abstractas.csproj",
-      "projectName": "Clases Abstractas",
-      "projectPath": "C:\\Users\\pc\\Desktop\\2DO CUATRI\\tp_laboratorio_2\\TP3 Laboratorio\\TP3\\Clases Abstractas\\Clases Abstractas\\Clases Abstractas.csproj",
+      "projectUniqueName": "C:\\Users\\pc\\Desktop\\2DO CUATRI\\tp_laboratorio_2\\TP3 Laboratorio\\TP3\\Clases Abstractas\\Clases Abstractas\\EntidadesAbstractas.csproj",
+      "projectName": "EntidadesAbstractas",
+      "projectPath": "C:\\Users\\pc\\Desktop\\2DO CUATRI\\tp_laboratorio_2\\TP3 Laboratorio\\TP3\\Clases Abstractas\\Clases Abstractas\\EntidadesAbstractas.csproj",
       "packagesPath": "C:\\Users\\pc\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\pc\\Desktop\\2DO CUATRI\\tp_laboratorio_2\\TP3 Laboratorio\\TP3\\Clases Abstractas\\Clases Abstractas\\obj\\",
       "projectStyle": "PackageReference",

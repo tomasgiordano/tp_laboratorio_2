@@ -6,7 +6,9 @@ namespace Excepciones
 {
     public class  DniInvalidoException:Exception
     {
-        public DniInvalidoException():base("DNI Inválido.")
+        private static string mensajeBase= "DNI Inválido.";
+
+        public DniInvalidoException():base(DniInvalidoException.mensajeBase)
         {
 
         }
@@ -16,7 +18,7 @@ namespace Excepciones
 
         }
 
-        public DniInvalidoException(Exception e) : this("DNI Inválido.",e)
+        public DniInvalidoException(Exception e) : this(DniInvalidoException.mensajeBase, e)
         {
 
         }
