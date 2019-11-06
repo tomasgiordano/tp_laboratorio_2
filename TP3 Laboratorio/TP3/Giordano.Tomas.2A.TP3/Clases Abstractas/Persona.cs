@@ -46,14 +46,14 @@ namespace EntidadesAbstractas
 
         public Persona(string nombre,string apellido,ENacionalidad nacionalidad)
         {
-            this.nombre = nombre;
-            this.apellido = apellido;
-            this.nacionalidad = nacionalidad;
+            this.Nombre = nombre;
+            this.Apellido = apellido;
+            this.Nacionalidad = nacionalidad;
         }
 
-        public Persona(string nombre,string apellido,int dni,ENacionalidad nacionalidad)
+        public Persona(string nombre,string apellido,int dni,ENacionalidad nacionalidad):this(nombre,apellido,nacionalidad)
         {
-            this.dni = dni;
+            this.DNI = dni;
         }
 
         public Persona(string nombre,string apellido,string dni,ENacionalidad nacionalidad):this(nombre,apellido,nacionalidad)

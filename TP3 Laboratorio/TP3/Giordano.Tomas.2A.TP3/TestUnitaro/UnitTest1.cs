@@ -44,7 +44,7 @@ namespace TestUnitaro
         public void AtributoNull()
         {
             Alumno alumno = new Alumno();
-            Assert.IsNotNull(alumno.Nombre);
+            Assert.IsNotNull(alumno.DNI);
         }
     }
 }
