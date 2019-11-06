@@ -41,7 +41,7 @@ namespace EntidadesAbstractas
 
         protected abstract string ParticiparEnClase();
 
-        public Universitario()
+        public Universitario():base()
         {
 
         }

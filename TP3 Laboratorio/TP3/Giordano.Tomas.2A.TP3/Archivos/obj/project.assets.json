@@ -198,11 +198,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\alumno\\Desktop\\Tomas\\tp_laboratorio_2\\TP3 Laboratorio\\TP3\\Clases Abstractas\\Archivos\\Archivos.csproj",
+      "projectUniqueName": "C:\\Users\\alumno\\Desktop\\Tomas\\tp_laboratorio_2\\TP3 Laboratorio\\TP3\\Giordano.Tomas.2A.TP3\\Archivos\\Archivos.csproj",
       "projectName": "Archivos",
-      "projectPath": "C:\\Users\\alumno\\Desktop\\Tomas\\tp_laboratorio_2\\TP3 Laboratorio\\TP3\\Clases Abstractas\\Archivos\\Archivos.csproj",
+      "projectPath": "C:\\Users\\alumno\\Desktop\\Tomas\\tp_laboratorio_2\\TP3 Laboratorio\\TP3\\Giordano.Tomas.2A.TP3\\Archivos\\Archivos.csproj",
       "packagesPath": "C:\\Users\\alumno\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\alumno\\Desktop\\Tomas\\tp_laboratorio_2\\TP3 Laboratorio\\TP3\\Clases Abstractas\\Archivos\\obj\\",
+      "outputPath": "C:\\Users\\alumno\\Desktop\\Tomas\\tp_laboratorio_2\\TP3 Laboratorio\\TP3\\Giordano.Tomas.2A.TP3\\Archivos\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\alumno\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -218,8 +218,8 @@
       "frameworks": {
         "netstandard2.0": {
           "projectReferences": {
-            "C:\\Users\\alumno\\Desktop\\Tomas\\tp_laboratorio_2\\TP3 Laboratorio\\TP3\\Clases Abstractas\\Excepciones\\Excepciones.csproj": {
-              "projectPath": "C:\\Users\\alumno\\Desktop\\Tomas\\tp_laboratorio_2\\TP3 Laboratorio\\TP3\\Clases Abstractas\\Excepciones\\Excepciones.csproj"
+            "C:\\Users\\alumno\\Desktop\\Tomas\\tp_laboratorio_2\\TP3 Laboratorio\\TP3\\Giordano.Tomas.2A.TP3\\Excepciones\\Excepciones.csproj": {
+              "projectPath": "C:\\Users\\alumno\\Desktop\\Tomas\\tp_laboratorio_2\\TP3 Laboratorio\\TP3\\Giordano.Tomas.2A.TP3\\Excepciones\\Excepciones.csproj"
             }
           }
         }

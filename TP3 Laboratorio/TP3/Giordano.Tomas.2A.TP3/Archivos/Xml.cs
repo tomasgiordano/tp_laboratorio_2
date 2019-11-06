@@ -8,7 +8,7 @@ using System.IO;
 
 namespace Archivos
 {
-    public class Xml<T>
+    public class Xml<T>:IArchivo<T>
     {
         public bool Guardar(string archivo, T datos)
         {

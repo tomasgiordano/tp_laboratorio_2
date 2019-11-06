@@ -22,3 +22,15 @@ C:\Users\alumno\Desktop\Tomas\tp_laboratorio_2\TP3 Laboratorio\TP3\Clases Abstra
 C:\Users\alumno\Desktop\Tomas\tp_laboratorio_2\TP3 Laboratorio\TP3\Clases Abstractas\Archivos\obj\Debug\netstandard2.0\Archivos.csproj.CopyComplete
 C:\Users\alumno\Desktop\Tomas\tp_laboratorio_2\TP3 Laboratorio\TP3\Clases Abstractas\Archivos\obj\Debug\netstandard2.0\Archivos.dll
 C:\Users\alumno\Desktop\Tomas\tp_laboratorio_2\TP3 Laboratorio\TP3\Clases Abstractas\Archivos\obj\Debug\netstandard2.0\Archivos.pdb
+C:\Users\alumno\Desktop\Tomas\tp_laboratorio_2\TP3 Laboratorio\TP3\Giordano.Tomas.2A.TP3\Archivos\bin\Debug\netstandard2.0\Archivos.deps.json
+C:\Users\alumno\Desktop\Tomas\tp_laboratorio_2\TP3 Laboratorio\TP3\Giordano.Tomas.2A.TP3\Archivos\bin\Debug\netstandard2.0\Archivos.dll
+C:\Users\alumno\Desktop\Tomas\tp_laboratorio_2\TP3 Laboratorio\TP3\Giordano.Tomas.2A.TP3\Archivos\bin\Debug\netstandard2.0\Archivos.pdb
+C:\Users\alumno\Desktop\Tomas\tp_laboratorio_2\TP3 Laboratorio\TP3\Giordano.Tomas.2A.TP3\Archivos\bin\Debug\netstandard2.0\Excepciones.dll
+C:\Users\alumno\Desktop\Tomas\tp_laboratorio_2\TP3 Laboratorio\TP3\Giordano.Tomas.2A.TP3\Archivos\bin\Debug\netstandard2.0\Excepciones.pdb
+C:\Users\alumno\Desktop\Tomas\tp_laboratorio_2\TP3 Laboratorio\TP3\Giordano.Tomas.2A.TP3\Archivos\obj\Debug\netstandard2.0\Archivos.csprojAssemblyReference.cache
+C:\Users\alumno\Desktop\Tomas\tp_laboratorio_2\TP3 Laboratorio\TP3\Giordano.Tomas.2A.TP3\Archivos\obj\Debug\netstandard2.0\Archivos.csproj.CoreCompileInputs.cache
+C:\Users\alumno\Desktop\Tomas\tp_laboratorio_2\TP3 Laboratorio\TP3\Giordano.Tomas.2A.TP3\Archivos\obj\Debug\netstandard2.0\Archivos.AssemblyInfoInputs.cache
+C:\Users\alumno\Desktop\Tomas\tp_laboratorio_2\TP3 Laboratorio\TP3\Giordano.Tomas.2A.TP3\Archivos\obj\Debug\netstandard2.0\Archivos.AssemblyInfo.cs
+C:\Users\alumno\Desktop\Tomas\tp_laboratorio_2\TP3 Laboratorio\TP3\Giordano.Tomas.2A.TP3\Archivos\obj\Debug\netstandard2.0\Archivos.csproj.CopyComplete
+C:\Users\alumno\Desktop\Tomas\tp_laboratorio_2\TP3 Laboratorio\TP3\Giordano.Tomas.2A.TP3\Archivos\obj\Debug\netstandard2.0\Archivos.dll
+C:\Users\alumno\Desktop\Tomas\tp_laboratorio_2\TP3 Laboratorio\TP3\Giordano.Tomas.2A.TP3\Archivos\obj\Debug\netstandard2.0\Archivos.pdb

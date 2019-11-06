@@ -39,9 +39,9 @@ namespace EntidadesAbstractas
         #endregion
 
         #region Constructores
-        public Persona()
+        public Persona():this("","",ENacionalidad.Argentino)
         {
-
+           
         }
 
         public Persona(string nombre,string apellido,ENacionalidad nacionalidad)
@@ -74,42 +74,41 @@ namespace EntidadesAbstractas
 
         private int ValidarDni(ENacionalidad nacionalidad,int dato)
         {
-            if(nacionalidad == ENacionalidad.Argentino) 
-            {
-                if (dato >= 1 && dato <= 89999999)
-                {
-                    return dato;
-                }
-                else
-                {
-                    throw new NacionalidadInvalidaException();
-                }
-            }
-            else if (nacionalidad == ENacionalidad.Extranjero) 
-            {
-                if (dato > 89999999 && dato <= 99999999)
-                {
-                    return dato;
-                }
-                else
-                {
-                    throw new NacionalidadInvalidaException();
-                }
-            }
-            else if(dato > 99999999|| dato < 1)
+            if(dato>99999999 || dato<1)
             {
                 throw new DniInvalidoException();
             }
-            else
-            {
-                throw new NacionalidadInvalidaException();
-            }
 
+            switch (nacionalidad)
+            {
+                case ENacionalidad.Argentino:
+                    if(dato>=1&&dato<=89999999)
+                    {
+                        return dato;
+                    }
+                    break;
+                case ENacionalidad.Extranjero:
+                    if(dato>=90000000&&dato<=99999999)
+                    {
+                        return dato;
+                    }
+                    break;
+            }
+            throw new NacionalidadInvalidaException();
         }
 
         private int ValidarDni(ENacionalidad nacionalidad, string dato)
         {
-            int auxiliar = int.Parse(dato);
+            int auxiliar;
+            try
+            {
+                auxiliar = int.Parse(dato);
+            }
+            catch(Exception)
+            {
+                throw new DniInvalidoException();
+            }
+            auxiliar = int.Parse(dato);
             return ValidarDni(nacionalidad, auxiliar);
         }
 

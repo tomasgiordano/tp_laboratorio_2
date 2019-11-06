@@ -30,3 +30,19 @@ C:\Users\alumno\Desktop\Tomas\tp_laboratorio_2\TP3 Laboratorio\TP3\Clases Abstra
 C:\Users\alumno\Desktop\Tomas\tp_laboratorio_2\TP3 Laboratorio\TP3\Clases Abstractas\Clases Instanciables\obj\Debug\netstandard2.0\Clases Instanciables.csproj.CopyComplete
 C:\Users\alumno\Desktop\Tomas\tp_laboratorio_2\TP3 Laboratorio\TP3\Clases Abstractas\Clases Instanciables\obj\Debug\netstandard2.0\Clases Instanciables.dll
 C:\Users\alumno\Desktop\Tomas\tp_laboratorio_2\TP3 Laboratorio\TP3\Clases Abstractas\Clases Instanciables\obj\Debug\netstandard2.0\Clases Instanciables.pdb
+C:\Users\alumno\Desktop\Tomas\tp_laboratorio_2\TP3 Laboratorio\TP3\Giordano.Tomas.2A.TP3\Clases Instanciables\bin\Debug\netstandard2.0\Clases Instanciables.deps.json
+C:\Users\alumno\Desktop\Tomas\tp_laboratorio_2\TP3 Laboratorio\TP3\Giordano.Tomas.2A.TP3\Clases Instanciables\bin\Debug\netstandard2.0\Clases Instanciables.dll
+C:\Users\alumno\Desktop\Tomas\tp_laboratorio_2\TP3 Laboratorio\TP3\Giordano.Tomas.2A.TP3\Clases Instanciables\bin\Debug\netstandard2.0\Clases Instanciables.pdb
+C:\Users\alumno\Desktop\Tomas\tp_laboratorio_2\TP3 Laboratorio\TP3\Giordano.Tomas.2A.TP3\Clases Instanciables\bin\Debug\netstandard2.0\Archivos.dll
+C:\Users\alumno\Desktop\Tomas\tp_laboratorio_2\TP3 Laboratorio\TP3\Giordano.Tomas.2A.TP3\Clases Instanciables\bin\Debug\netstandard2.0\EntidadesAbstractas.dll
+C:\Users\alumno\Desktop\Tomas\tp_laboratorio_2\TP3 Laboratorio\TP3\Giordano.Tomas.2A.TP3\Clases Instanciables\bin\Debug\netstandard2.0\Excepciones.dll
+C:\Users\alumno\Desktop\Tomas\tp_laboratorio_2\TP3 Laboratorio\TP3\Giordano.Tomas.2A.TP3\Clases Instanciables\bin\Debug\netstandard2.0\Archivos.pdb
+C:\Users\alumno\Desktop\Tomas\tp_laboratorio_2\TP3 Laboratorio\TP3\Giordano.Tomas.2A.TP3\Clases Instanciables\bin\Debug\netstandard2.0\EntidadesAbstractas.pdb
+C:\Users\alumno\Desktop\Tomas\tp_laboratorio_2\TP3 Laboratorio\TP3\Giordano.Tomas.2A.TP3\Clases Instanciables\bin\Debug\netstandard2.0\Excepciones.pdb
+C:\Users\alumno\Desktop\Tomas\tp_laboratorio_2\TP3 Laboratorio\TP3\Giordano.Tomas.2A.TP3\Clases Instanciables\obj\Debug\netstandard2.0\Clases Instanciables.csprojAssemblyReference.cache
+C:\Users\alumno\Desktop\Tomas\tp_laboratorio_2\TP3 Laboratorio\TP3\Giordano.Tomas.2A.TP3\Clases Instanciables\obj\Debug\netstandard2.0\Clases Instanciables.csproj.CoreCompileInputs.cache
+C:\Users\alumno\Desktop\Tomas\tp_laboratorio_2\TP3 Laboratorio\TP3\Giordano.Tomas.2A.TP3\Clases Instanciables\obj\Debug\netstandard2.0\Clases Instanciables.AssemblyInfoInputs.cache
+C:\Users\alumno\Desktop\Tomas\tp_laboratorio_2\TP3 Laboratorio\TP3\Giordano.Tomas.2A.TP3\Clases Instanciables\obj\Debug\netstandard2.0\Clases Instanciables.AssemblyInfo.cs
+C:\Users\alumno\Desktop\Tomas\tp_laboratorio_2\TP3 Laboratorio\TP3\Giordano.Tomas.2A.TP3\Clases Instanciables\obj\Debug\netstandard2.0\Clases Instanciables.csproj.CopyComplete
+C:\Users\alumno\Desktop\Tomas\tp_laboratorio_2\TP3 Laboratorio\TP3\Giordano.Tomas.2A.TP3\Clases Instanciables\obj\Debug\netstandard2.0\Clases Instanciables.dll
+C:\Users\alumno\Desktop\Tomas\tp_laboratorio_2\TP3 Laboratorio\TP3\Giordano.Tomas.2A.TP3\Clases Instanciables\obj\Debug\netstandard2.0\Clases Instanciables.pdb

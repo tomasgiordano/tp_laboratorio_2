@@ -14,7 +14,7 @@ namespace Clases_Instanciables
         #endregion
 
         #region Métodos
-        public Alumno()
+        public Alumno():base()
         {
 
         }

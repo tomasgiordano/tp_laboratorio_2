@@ -16,8 +16,8 @@ namespace Clases_Instanciables
         #region Métodos
         private void _randomClases()
         {
-            this.clasesDelDia.Enqueue((Universidad.EClases)Profesor.random.Next(3));
-            this.clasesDelDia.Enqueue((Universidad.EClases)Profesor.random.Next(3));
+            this.clasesDelDia.Enqueue((Universidad.EClases)Profesor.random.Next(0,4));
+            this.clasesDelDia.Enqueue((Universidad.EClases)Profesor.random.Next(0,4));
         }
 
         protected override string MostrarDatos()
