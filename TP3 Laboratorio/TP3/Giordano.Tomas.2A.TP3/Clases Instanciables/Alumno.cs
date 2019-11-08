@@ -14,6 +14,8 @@ namespace Clases_Instanciables
         #endregion
 
         #region Métodos
+
+        #region Constructores
         public Alumno():base()
         {
 
@@ -27,8 +29,13 @@ namespace Clases_Instanciables
         public Alumno(int id,string nombre,string apellido,string dni,ENacionalidad nacionalidad,Universidad.EClases claseQueToma,EEstadoCuenta estadoCuenta):this(id,nombre,apellido,dni,nacionalidad,claseQueToma)
         {
             this.estadoCuenta = estadoCuenta;
-        }       
+        }
+        #endregion
 
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <returns>Cadena de caracteres con la informacion del alumno</returns>
         protected override string MostrarDatos()
         {
             StringBuilder sb = new StringBuilder();
@@ -39,6 +46,7 @@ namespace Clases_Instanciables
             return sb.ToString();
         }
 
+        #region Sobrecargas
         public static bool operator ==(Alumno a,Universidad.EClases clase)
         {
             return a.claseQueToma == clase;
@@ -60,13 +68,17 @@ namespace Clases_Instanciables
         {
             return this.MostrarDatos();
         }
+        #endregion
 
+        #region Enumerado
         public enum EEstadoCuenta
         {
             AlDia,
             Deudor,
             Becado,
         }
+        #endregion
+
         #endregion
     }
 }

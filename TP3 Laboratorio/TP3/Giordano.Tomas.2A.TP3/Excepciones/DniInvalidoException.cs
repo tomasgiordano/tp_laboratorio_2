@@ -6,8 +6,11 @@ namespace Excepciones
 {
     public class  DniInvalidoException:Exception
     {
+        #region Atributos
         private static string mensajeBase= "DNI Inválido.";
+        #endregion
 
+        #region Metodos
         public DniInvalidoException():base(DniInvalidoException.mensajeBase)
         {
 
@@ -27,7 +30,7 @@ namespace Excepciones
         {
 
         }
+        #endregion
 
-        
     }
 }

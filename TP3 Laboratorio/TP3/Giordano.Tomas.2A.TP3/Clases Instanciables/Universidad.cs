@@ -30,12 +30,23 @@ namespace Clases_Instanciables
         #endregion
 
         #region Métodos
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param Universidad="uni"></param>
+        /// <returns>True si puede guardar en el archivo Xml</returns>
         public static bool Guardar(Universidad uni)
         {
             Xml<Universidad> exportar = new Xml<Universidad>();
             return exportar.Guardar("Universidad.xml", uni);
         }
 
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param Universidad="uni"></param>
+        /// <returns>La cadena de caracteres dentro de Universidad.txt</returns>
         public static Universidad Leer(Universidad uni)
         {
             Xml<Universidad> importar = new Xml<Universidad>();
@@ -44,6 +55,11 @@ namespace Clases_Instanciables
             return UniversidadAux;
         }
 
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param Universidad="uni"></param>
+        /// <returns>La descripcion de la jornada</returns>
         private static string MostrarDatos(Universidad uni)
         {
             StringBuilder sb = new StringBuilder();
@@ -54,6 +70,7 @@ namespace Clases_Instanciables
             return sb.ToString();
         }
 
+        #region Sobrecarga
         public static bool operator ==(Universidad g,Alumno a)
         {
             if (!Object.Equals(g, null)&&!Object.Equals(a,null))
@@ -146,19 +163,22 @@ namespace Clases_Instanciables
             throw new AlumnoRepetidoException(); 
         }
 
-
         public override string ToString()
         {
             return Universidad.MostrarDatos(this);
         }
+        #endregion
 
+        #region Constructores
         public Universidad()
         {
             this.alumnos = new List<Alumno>();
             this.profesores = new List<Profesor>();
             this.jornada = new List<Jornada>();
         }
+        #endregion
 
+        #region Enumerado
         public enum EClases
         {
             Programacion = 0,
@@ -166,6 +186,7 @@ namespace Clases_Instanciables
             Legislacion = 2,
             SPD = 3,
         }
+        #endregion
 
         #endregion
     }

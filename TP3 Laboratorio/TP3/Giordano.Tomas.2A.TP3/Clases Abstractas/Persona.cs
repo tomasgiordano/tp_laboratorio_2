@@ -63,6 +63,8 @@ namespace EntidadesAbstractas
         #endregion
 
         #region Metodos
+
+        #region Sobrecargas
         public override string ToString()
         {
             StringBuilder sb = new StringBuilder();
@@ -71,7 +73,14 @@ namespace EntidadesAbstractas
 
             return sb.ToString();
         }
+        #endregion
 
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param ENacionalidad="nacionalidad"></param>
+        /// <param Dni="dato"></param>
+        /// <returns>El dni en caso de ser valido</returns>
         private int ValidarDni(ENacionalidad nacionalidad,int dato)
         {
             if(dato>99999999 || dato<1)
@@ -97,6 +106,12 @@ namespace EntidadesAbstractas
             throw new NacionalidadInvalidaException();
         }
 
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param ENacionalidad="nacionalidad"></param>
+        /// <param dni="dato"></param>
+        /// <returns>El dni en caso de ser valido</returns>
         private int ValidarDni(ENacionalidad nacionalidad, string dato)
         {
             int auxiliar;
@@ -112,6 +127,11 @@ namespace EntidadesAbstractas
             return ValidarDni(nacionalidad, auxiliar);
         }
 
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param Nombre o apellido="dato"></param>
+        /// <returns>El nombre/apellido en caso de ser valido</returns>
         private string ValidarNombreApellido(string dato)
         {
             Regex r = new Regex("^[A-Za-z]+$");
@@ -125,11 +145,14 @@ namespace EntidadesAbstractas
             }
         }
 
+        #region Enumerados
         public enum ENacionalidad
         {
             Argentino,
             Extranjero,
         }
+        #endregion
+
         #endregion
     }
 }

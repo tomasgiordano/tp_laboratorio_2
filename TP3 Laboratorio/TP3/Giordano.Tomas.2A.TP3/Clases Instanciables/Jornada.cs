@@ -26,12 +26,31 @@ namespace Clases_Instanciables
         #endregion
 
         #region Métodos
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="jornada"></param>
+        /// <returns>True si lo pudo guardar</returns>
         public static bool Guardar(Jornada jornada)
         {
             Texto t = new Texto();
             return t.Guardar("Jornada.txt", jornada.ToString());
         }
 
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <returns>La cadena de caracteres dentro de Jornada.txt</returns>
+        public string Leer()
+        {
+            Texto t = new Texto();
+            string auxiliar = "";
+            t.Leer("Jornada.txt", out auxiliar);
+            return auxiliar;
+        }
+
+        #region Constructores
         private Jornada()
         {
             this.alumnos = new List<Alumno>();
@@ -42,15 +61,9 @@ namespace Clases_Instanciables
             this.Clase = clase;
             this.Instructor = instructor;
         }
+        #endregion   
 
-        public string Leer()
-        {
-            Texto t = new Texto();
-            string auxiliar = "";
-            t.Leer("Jornada.txt", out auxiliar);
-            return auxiliar;
-        }
-
+        #region Sobrecargas
         public static bool operator ==(Jornada j,Alumno a)
         {
             if(j.Alumnos.Contains(a))
@@ -89,6 +102,8 @@ namespace Clases_Instanciables
             sb.AppendLine("----------------------------------------");
             return sb.ToString();
         }
+        #endregion
+
         #endregion
     }
 }

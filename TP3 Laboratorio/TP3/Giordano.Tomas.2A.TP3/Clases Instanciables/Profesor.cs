@@ -14,12 +14,17 @@ namespace Clases_Instanciables
         #endregion
 
         #region Métodos
+
+        /// <summary>
+        /// Le asigna dos clases random al profesor
+        /// </summary>
         private void _randomClases()
         {
             this.clasesDelDia.Enqueue((Universidad.EClases)Profesor.random.Next(0,4));
             this.clasesDelDia.Enqueue((Universidad.EClases)Profesor.random.Next(0,4));
         }
 
+        #region Sobrecargas      
         protected override string MostrarDatos()
         {
             StringBuilder sb = new StringBuilder();
@@ -56,6 +61,13 @@ namespace Clases_Instanciables
             return sb.ToString();
         }
 
+        public override string ToString()
+        {
+            return this.MostrarDatos();
+        }
+        #endregion
+
+        #region Constructores
         public Profesor()
         {
 
@@ -72,10 +84,9 @@ namespace Clases_Instanciables
             this._randomClases();
         }
 
-        public override string ToString()
-        {
-            return this.MostrarDatos();
-        }
+        #endregion
+
+       
         #endregion
     }
 }

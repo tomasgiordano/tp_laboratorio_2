@@ -11,6 +11,8 @@ namespace EntidadesAbstractas
         #endregion
 
         #region Metodos
+
+        #region Sobrecargas
         public override bool Equals(object obj)
         {
             if(this.DNI==((Universitario)obj).DNI||this.legajo==((Universitario)obj).legajo)
@@ -38,9 +40,11 @@ namespace EntidadesAbstractas
         {
             return !(pg1.Equals(pg2));
         }
+        #endregion
 
         protected abstract string ParticiparEnClase();
 
+        #region Constructores
         public Universitario():base()
         {
 
@@ -54,6 +58,8 @@ namespace EntidadesAbstractas
             this.Nacionalidad = nacionalidad;
             this.StringToDNI = dni;
         }
+        #endregion
+
         #endregion
     }
 }

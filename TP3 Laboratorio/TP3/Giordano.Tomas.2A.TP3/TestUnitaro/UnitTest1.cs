@@ -10,6 +10,9 @@ namespace TestUnitaro
     [TestClass]
     public class UnitTest1
     {
+        /// <summary>
+        /// Comprueba si se puede agregar dos alumos iguales a la misma universidad.
+        /// </summary>
         [TestMethod]
         public void AlumnoRepetido()
         {
@@ -27,6 +30,9 @@ namespace TestUnitaro
             }
         }
 
+        /// <summary>
+        /// Pasa un dni invalido y comprueba si salta la excepcion.
+        /// </summary>
         [TestMethod]
         public void DniInvalido()
         {
@@ -40,11 +46,24 @@ namespace TestUnitaro
             }
         }
 
+        /// <summary>
+        /// Comprueba si un atributo de una instancia de Alumno es null 
+        /// </summary>
         [TestMethod]
         public void AtributoNull()
         {
             Alumno alumno = new Alumno();
             Assert.IsNotNull(alumno.DNI);
+        }
+
+        /// <summary>
+        /// Comprueba si se pasa de forma correcta el dni(string) a int
+        /// </summary>
+        [TestMethod]
+        public void AtributosInt()
+        {
+            Alumno alumno1 = new Alumno(1234, "Franco", "Paez", "12345678", Persona.ENacionalidad.Argentino, Universidad.EClases.SPD);
+            Assert.AreEqual(alumno1.DNI, 12345678);
         }
     }
 }
