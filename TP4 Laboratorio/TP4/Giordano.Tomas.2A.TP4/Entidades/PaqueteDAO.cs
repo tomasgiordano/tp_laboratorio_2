@@ -10,15 +10,30 @@ namespace Entidades
     public static class PaqueteDAO
     {
         #region Campos
-        public static SqlCommand comando;
-        public static SqlConnection conexion;
+        private static SqlCommand comando;
+        private static SqlConnection conexion;
         #endregion
 
         #region Metodos
-        //public static bool Insertar(Paquete p)
-       // {
+        public static bool Insertar(Paquete p)
+        {
+            bool aux=false;
 
-        //}
+            try
+            {
+                PaqueteDAO.conexion.Open();
+                PaqueteDAO.comando.CommandText = "INSERT INTO [correo-sp-2017].dbo.Paquetes(direccionEntrega, trackingID, alumno) VALUES('" + p.DireccionEntrega + "', '" + p.TrackingID + "', 'Tomas Giordano')";
+                PaqueteDAO.comando.ExecuteNonQuery();
+                PaqueteDAO.conexion.Close();
+                aux = true;
+            }
+            catch(Exception e)
+            {
+                throw new Exception("ERROR con la carga de datos.");
+            }
+
+            return aux;
+        }
 
         static PaqueteDAO()
         {
