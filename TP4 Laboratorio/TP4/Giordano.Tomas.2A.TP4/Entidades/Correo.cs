@@ -22,12 +22,18 @@ namespace Entidades
         #endregion
 
         #region Metodos
+        /// <summary>
+        /// Constructor de correo
+        /// </summary>
         public Correo()
         {
             this.mockPaquetes = new List<Thread>();
             this.Paquetes = new List<Paquete>();
         }
 
+        /// <summary>
+        /// Aborta todos los hilos de los paquetes existentes
+        /// </summary>
         public void FinEntregas()
         {
             foreach (Thread hilo in this.mockPaquetes)
@@ -39,10 +45,14 @@ namespace Entidades
             }
         }
 
+        /// <summary>
+        /// Devuelve la informacion de cada paquete
+        /// </summary>
+        /// <param name="elementos"></param>
+        /// <returns>La informacion en string</returns>
         public string MostrarDatos(IMostrar<List<Paquete>> elementos)
         {
             StringBuilder sb = new StringBuilder();
-
             foreach(Paquete p in this.Paquetes)
             {
                 if(!p.Equals(null))
@@ -53,22 +63,26 @@ namespace Entidades
             return sb.ToString();
         }
 
+        /// <summary>
+        /// Suma un paquete a la lista del correo si es que sus TrackingID NO son iguales
+        /// </summary>
+        /// <param name="c"></param>
+        /// <param name="p"></param>
+        /// <returns>El correo que se le pasa por parametro</returns>
         public static Correo operator + (Correo c, Paquete p)
-        {
-            if(!p.Equals(null)&&!c.Equals(null))
+        {          
+            foreach(Paquete paq in c.Paquetes)
             {
-                foreach(Paquete paq in c.Paquetes)
+                if (paq == p)
                 {
-                    if (paq.TrackingID == p.TrackingID)
-                    {
-                        throw new TrackingIdRepetidoException("El Tracking ID " + p.TrackingID + " ya figura en la lista de envios.");
-                    }
+                    throw new TrackingIdRepetidoException("El Tracking ID "+p.TrackingID+" ya figura en la lista de envios.");
                 }
-                c.paquetes.Add(p);
-                Thread hilo = new Thread(p.MockCicloDeVida);
-                hilo.Start();
-                c.mockPaquetes.Add(hilo);
             }
+            c.paquetes.Add(p);
+            Thread hilo = new Thread(p.MockCicloDeVida);
+            hilo.Start();
+            c.mockPaquetes.Add(hilo);        
+            
             return c;
         }
         #endregion

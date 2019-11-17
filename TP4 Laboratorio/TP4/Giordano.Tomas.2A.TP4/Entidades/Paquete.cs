@@ -35,6 +35,9 @@ namespace Entidades
         #endregion
 
         #region Metodos
+        /// <summary>
+        /// Ciclo de vida de un paquete
+        /// </summary>
         public void MockCicloDeVida()
         {
             while (this.Estado != EEstado.Entregado)
@@ -47,11 +50,22 @@ namespace Entidades
             PaqueteDAO.Insertar(this);
         }
 
+        /// <summary>
+        /// Muestra los datos de el paquete que se le pase como parametro 
+        /// </summary>
+        /// <param name="elemento"></param>
+        /// <returns>Informacion en string</returns>
         public string MostrarDatos(IMostrar<Paquete> elemento)
         {
             return string.Format("{0} para {1}", ((Paquete)elemento).TrackingID, ((Paquete)elemento).DireccionEntrega);
         }
 
+        /// <summary>
+        /// Se fija si los dos paquetes que se pasan como parametros son iguales
+        /// </summary>
+        /// <param name="p1"></param>
+        /// <param name="p2"></param>
+        /// <returns>True si tienen el mismo TrackingID</returns>
         public static bool operator ==(Paquete p1, Paquete p2)
         {
             if(!object.Equals(p1,null)&&!object.Equals(p2,null))
@@ -65,11 +79,22 @@ namespace Entidades
             return false;
         }
 
+        /// <summary>
+        /// Se fija si los dos paquetes que se pasan como parametros sean distintos
+        /// </summary>
+        /// <param name="p1"></param>
+        /// <param name="p2"></param>
+        /// <returns>True si tienen distintos TrackingID</returns>
         public static bool operator !=(Paquete p1, Paquete p2)
         {
             return !(p1 == p2);
         }
 
+        /// <summary>
+        /// Constructor Paquete
+        /// </summary>
+        /// <param name="direccionEntrega"></param>
+        /// <param name="trackingID"></param>
         public Paquete(string direccionEntrega, string trackingID)
         {
             this.DireccionEntrega = direccionEntrega;
@@ -77,6 +102,10 @@ namespace Entidades
             this.Estado = EEstado.Ingresado;           
         }
 
+        /// <summary>
+        /// Sobreescritura del ToString de Paquete
+        /// </summary>
+        /// <returns>Devuelve el Mostrar datos de esta clase</returns>
         public override string ToString()
         {
             return this.MostrarDatos(this);

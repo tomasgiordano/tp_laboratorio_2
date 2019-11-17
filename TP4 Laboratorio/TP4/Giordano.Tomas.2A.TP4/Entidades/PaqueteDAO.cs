@@ -15,6 +15,11 @@ namespace Entidades
         #endregion
 
         #region Metodos
+        /// <summary>
+        /// Agrega un paquete a la base de datos
+        /// </summary>
+        /// <param name="p"></param>
+        /// <returns>True si pudo agregarlo</returns>
         public static bool Insertar(Paquete p)
         {
             bool aux=false;
@@ -37,6 +42,9 @@ namespace Entidades
             return aux;
         }
 
+        /// <summary>
+        /// Inicializaciones de la conexion y el comando con SQL
+        /// </summary>
         static PaqueteDAO()
         {
             conexion = new SqlConnection(Properties.Settings.Default.Conexion);

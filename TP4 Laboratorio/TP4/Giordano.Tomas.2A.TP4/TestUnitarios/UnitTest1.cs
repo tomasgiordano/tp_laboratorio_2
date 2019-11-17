@@ -6,6 +6,9 @@ namespace TestUnitarios
     [TestClass]
     public class UnitTest1
     {
+        /// <summary>
+        /// Prueba si la lista de paquetes es instanciada cuando creamos un correo
+        /// </summary>
         [TestMethod]
         public void ListaDePaquetesInstanciada()
         {
@@ -13,6 +16,9 @@ namespace TestUnitarios
             Assert.AreNotEqual(c.Paquetes, null);
         }
 
+        /// <summary>
+        /// Prueba crear dos paquetes con el mismo TrackingID y que salte una excepcion especifica al hacerlo
+        /// </summary>
         [TestMethod]
         public void PaquetesIgualesEnLista()
         {
@@ -24,9 +30,9 @@ namespace TestUnitarios
                 c += p1;
                 c += p2;
             }
-            catch (Exception error)
+            catch (Exception e)
             {
-                Assert.IsInstanceOfType(error, typeof(TrackingIdRepetidoException));
+                Assert.IsInstanceOfType(e, typeof(TrackingIdRepetidoException));
             }
         }
     }

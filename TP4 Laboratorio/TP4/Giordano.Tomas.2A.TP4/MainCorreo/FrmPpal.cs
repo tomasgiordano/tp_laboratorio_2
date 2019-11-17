@@ -40,6 +40,9 @@ namespace MainCorreo
             }
         }
 
+        /// <summary>
+        /// Actualiza los estados de los paquetes entre Ingresado, En Viaje y Entregado
+        /// </summary>
         private void ActualizarEstados()
         {
             lstEstadoIngresado.Items.Clear();
@@ -69,6 +72,11 @@ namespace MainCorreo
             this.Close();
         }
 
+        /// <summary>
+        /// Funcion solicitada por el TP
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void paq_InformaEstado(object sender, EventArgs e)
         {
             if (this.InvokeRequired)
@@ -88,6 +96,11 @@ namespace MainCorreo
             this.MostrarInformacion<List<Paquete>>((IMostrar<List<Paquete>>)c);
         }
 
+        /// <summary>
+        /// Agrega la informacion al RichTextBox "Mostrar" y ademas escribe esta informacion en un archivo .txt llamado "salida"
+        /// </summary>
+        /// <typeparam name="T"></typeparam>
+        /// <param name="elemento"></param>
         private void MostrarInformacion<T>(IMostrar<T> elemento)
         {
             if (!elemento.Equals(null))
