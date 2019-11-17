@@ -55,19 +55,19 @@ namespace Entidades
 
         public static Correo operator + (Correo c, Paquete p)
         {
-            if(!c.Equals(null)&&!p.Equals(null))
+            if(!p.Equals(null)&&!c.Equals(null))
             {
-                if(!c.Paquetes.Contains(p))
+                foreach(Paquete paq in c.Paquetes)
                 {
-                    c.Paquetes.Add(p);
-                    Thread hilo = new Thread(p.MockCicloDeVida);
-                    hilo.Start();
-                    c.mockPaquetes.Add(hilo);
+                    if (paq.TrackingID == p.TrackingID)
+                    {
+                        throw new TrackingIdRepetidoException("El Tracking ID " + p.TrackingID + " ya figura en la lista de envios.");
+                    }
                 }
-                else
-                {
-                    throw new TrackingIdRepetidoException("TrackingId repetido, paquete ya existente.");
-                }
+                c.paquetes.Add(p);
+                Thread hilo = new Thread(p.MockCicloDeVida);
+                hilo.Start();
+                c.mockPaquetes.Add(hilo);
             }
             return c;
         }

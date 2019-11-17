@@ -21,7 +21,9 @@ namespace Entidades
 
             try
             {
+                
                 PaqueteDAO.conexion.Open();
+                PaqueteDAO.comando.Connection = conexion;
                 PaqueteDAO.comando.CommandText = "INSERT INTO [correo-sp-2017].dbo.Paquetes(direccionEntrega, trackingID, alumno) VALUES('" + p.DireccionEntrega + "', '" + p.TrackingID + "', 'Tomas Giordano')";
                 PaqueteDAO.comando.ExecuteNonQuery();
                 PaqueteDAO.conexion.Close();
@@ -29,7 +31,7 @@ namespace Entidades
             }
             catch(Exception e)
             {
-                throw new Exception("ERROR con la carga de datos.");
+                throw new Exception(e.Message);
             }
 
             return aux;

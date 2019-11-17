@@ -26,9 +26,8 @@ namespace Entidades.Properties {
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
-        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=TOMASGIORDANO/SQLEXPRESS;AttachDbFilename=\"C:\\Program Files\\Microsoft" +
-            " SQL Server\\MSSQL10.SQLEXPRESS\\MSSQL\\DATA\\correo-sp-2017.mdf\";Initial Catalog=co" +
-            "rreo-sp-2017;Integrated Security=True")]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=TOMASGIORDANO\\SQLEXPRESS;Initial Catalog=correo-sp-2017;Integrated Se" +
+            "curity=True")]
         public string Conexion {
             get {
                 return ((string)(this["Conexion"]));

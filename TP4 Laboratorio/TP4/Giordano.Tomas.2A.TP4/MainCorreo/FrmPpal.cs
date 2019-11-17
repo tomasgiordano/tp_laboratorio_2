@@ -21,6 +21,7 @@ namespace MainCorreo
         public FrmPpal()
         {
             InitializeComponent();
+            this.StartPosition=FormStartPosition.CenterScreen;
             c = new Correo();
         }
 
@@ -33,9 +34,9 @@ namespace MainCorreo
                 c += p;
                 ActualizarEstados();
             }
-            catch (TrackingIdRepetidoException)
+            catch(TrackingIdRepetidoException f)
             {
-                MessageBox.Show("TrackingId repetido, paquete ya existente.");
+                MessageBox.Show(f.Message,"Paquete Repetido",MessageBoxButtons.OK,MessageBoxIcon.Question);
             }
         }
 
@@ -65,6 +66,7 @@ namespace MainCorreo
         private void FrmPpal_FormClosing(object sender, EventArgs e)
         {
             c.FinEntregas();
+            this.Close();
         }
 
         private void paq_InformaEstado(object sender, EventArgs e)
@@ -79,9 +81,7 @@ namespace MainCorreo
                 ActualizarEstados();
             }
         }
-
-        #endregion
-
+        
         private void btnMostrarTodos_Click(object sender, EventArgs e)
         {
             this.MostrarInformacion<List<Paquete>>((IMostrar<List<Paquete>>)c);
@@ -92,11 +92,12 @@ namespace MainCorreo
             if (!elemento.Equals(null))
             {
                 this.rtbMostrar.Text += elemento.MostrarDatos(elemento) + "\n";
-                using (System.IO.StreamWriter sw = new System.IO.StreamWriter("salida.txt",true))
+                using (System.IO.StreamWriter sw = new System.IO.StreamWriter("salida.txt"))
                 {
                     sw.Write(rtbMostrar.Text);          
                 }                
             }
         }
+        #endregion
     }
 }

@@ -176,13 +176,14 @@
             // mtxtTrackingID
             // 
             this.mtxtTrackingID.Location = new System.Drawing.Point(15, 53);
-            this.mtxtTrackingID.Mask = "___-___-___";
+            this.mtxtTrackingID.Mask = "000-000-0000";
             this.mtxtTrackingID.Name = "mtxtTrackingID";
             this.mtxtTrackingID.Size = new System.Drawing.Size(127, 20);
             this.mtxtTrackingID.TabIndex = 0;
             // 
             // rtbMostrar
             // 
+            this.rtbMostrar.Enabled = false;
             this.rtbMostrar.Location = new System.Drawing.Point(12, 319);
             this.rtbMostrar.Name = "rtbMostrar";
             this.rtbMostrar.Size = new System.Drawing.Size(439, 150);
@@ -224,8 +225,8 @@
         private System.Windows.Forms.TextBox txtDireccion;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.MaskedTextBox mtxtTrackingID;
         private System.Windows.Forms.RichTextBox rtbMostrar;
+        private System.Windows.Forms.MaskedTextBox mtxtTrackingID;
     }
 }
 
