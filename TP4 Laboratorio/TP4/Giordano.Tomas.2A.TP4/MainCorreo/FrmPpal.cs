@@ -84,6 +84,7 @@ namespace MainCorreo
         
         private void btnMostrarTodos_Click(object sender, EventArgs e)
         {
+            this.rtbMostrar.Clear();
             this.MostrarInformacion<List<Paquete>>((IMostrar<List<Paquete>>)c);
         }
 
@@ -95,7 +96,7 @@ namespace MainCorreo
                 using (System.IO.StreamWriter sw = new System.IO.StreamWriter("salida.txt"))
                 {
                     sw.Write(rtbMostrar.Text);          
-                }                
+                }
             }
         }
         #endregion
