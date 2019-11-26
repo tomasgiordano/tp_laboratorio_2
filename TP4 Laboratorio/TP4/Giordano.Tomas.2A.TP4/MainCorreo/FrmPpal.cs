@@ -112,6 +112,16 @@ namespace MainCorreo
                 }
             }
         }
+
+        private void mostrarToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if(this.lstEstadoEntregado.SelectedIndex!=-1)
+            {
+                this.rtbMostrar.Clear();
+                this.MostrarInformacion<Paquete>((IMostrar<Paquete>)this.lstEstadoEntregado.SelectedItem);
+            }
+        }
         #endregion
+
     }
 }
