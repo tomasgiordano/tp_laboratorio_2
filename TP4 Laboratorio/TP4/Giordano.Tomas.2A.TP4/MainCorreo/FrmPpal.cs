@@ -103,14 +103,12 @@ namespace MainCorreo
         /// <param name="elemento"></param>
         private void MostrarInformacion<T>(IMostrar<T> elemento)
         {
-            if (!elemento.Equals(null))
-            {
-                this.rtbMostrar.Text += elemento.MostrarDatos(elemento) + "\n";
-                using (System.IO.StreamWriter sw = new System.IO.StreamWriter("salida.txt"))
-                {
-                    sw.Write(rtbMostrar.Text);          
-                }
-            }
+
+             if (!(elemento.Equals(null)))
+             {
+                 this.rtbMostrar.Text = elemento.MostrarDatos(elemento) + "\n";
+                 this.rtbMostrar.Text.Guardar("salida.txt");
+             }
         }
 
         private void mostrarToolStripMenuItem_Click(object sender, EventArgs e)
